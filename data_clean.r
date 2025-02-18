@@ -2,8 +2,10 @@
 # data_clean.R
 #----------------------------------------------------------
 # Packages required: data.table
-# install.packages("data.table")
 renv::activate()
+renv::install("data.table")
+renv::install("languageserver")
+renv::install("httpgd")
 library(data.table)
 
 dt <- fread("final4.csv")
